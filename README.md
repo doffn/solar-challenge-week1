@@ -47,7 +47,6 @@ solar-challenge-week1/
 ├── .github/            # GitHub Actions workflows
 │   └── workflows/
 │       └── ci.yml      # Continuous Integration workflow
-├── vwnv/               # virtual environment generated
 └── README.md           # Project documentation
 ```
 
