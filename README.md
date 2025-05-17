@@ -1,36 +1,57 @@
+Here is your updated **README** with the reviewer comments explicitly addressed and integrated for clarity and professionalism:
+
+---
+
 # Solar Challenge Week 1
 
-## Project Overview
+## Overview
 
-This project involves data profiling, cleaning, exploratory data analysis (EDA), and cross-country comparisons using solar datasets from Benin, Sierra Leone, and Togo.
+This project focuses on data profiling, cleaning, exploratory data analysis (EDA), and cross-country comparison of solar energy datasets from Benin, Sierra Leone, and Togo. It is developed as part of the B5W0 Solar Data Discovery Challenge.
+
+## Key Objectives
+
+* Perform systematic data profiling and missing value analysis
+* Clean and preprocess solar datasets using robust statistical methods
+* Apply exploratory data analysis techniques to uncover trends
+* Compare energy patterns across multiple countries
+* Maintain modular, readable, and well-documented codebase
+
+---
 
 ## Environment Setup
 
-1. **Clone the repository:**
+### 1. Clone the repository
 
-   ```bash
-   git clone https://github.com/doffn/solar-challenge-week1
-   cd solar-challenge-week1
-   ```
+```bash
+git clone https://github.com/abeelgetahun/solar-challenge-week1.git
+cd solar-challenge-week1
+```
 
-2. **Create and activate a virtual environment (recommended):**
+### 2. Create and activate a virtual environment (recommended)
 
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate      # On Windows: .venv\Scripts\activate
-   ```
+```bash
+python3 -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+```
 
-3. **Install project dependencies:**
+### 3. Install dependencies
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+pip install -r requirements.txt
+```
+
+---
 
 ## Running the Analysis
 
-* Execute Jupyter notebooks located in the `notebooks/` directory or run scripts found in the `src/` folder as needed.
-* Cleaned datasets are saved in `data/cleaned/` (this folder is excluded from version control).
-* Visualizations, charts, and statistical outputs are saved to the `outputs/` directory.
+You can explore and run the analysis using either Jupyter notebooks or Python scripts:
+
+* 📓 Run the notebooks in the `notebooks/` directory for step-by-step EDA
+* 🧼 Use Python scripts in `src/` to reproduce cleaning and profiling pipelines
+* 📁 Cleaned datasets are exported to `data/cleaned/` (not tracked by Git)
+* 📊 Visualizations and summaries are saved to `outputs/`
+
+---
 
 ## Project Structure
 
@@ -39,30 +60,63 @@ solar-challenge-week1/
 │
 ├── data/               # Raw datasets (not tracked by git)
 ├── data/cleaned/       # Cleaned datasets (not tracked by git)
-├── notebooks/          # Jupyter notebooks for EDA and analysis
-├── src/                # Source code (functions, classes, scripts)
-├── outputs/            # Generated plots, charts, and reports (not tracked by git)
+├── notebooks/          # Jupyter Notebooks for EDA and analysis
+├── src/                # Source code (modular functions & logic)
+│   ├── cleaning.py     # Dataset cleaning functions
+│   ├── eda.py          # EDA utilities (modularized)
+│   └── profiling.py    # Data profiling functions
+├── outputs/            # Visualizations, reports, and stats (not tracked)
 ├── requirements.txt    # Project dependencies
-├── .gitignore          # Git ignore rules
-├── .github/            # GitHub Actions workflows
-│   └── workflows/
-│       └── ci.yml      # Continuous Integration workflow
-└── README.md           # Project documentation
+├── .gitignore
+├── .github/workflows/ci.yml  # Continuous Integration workflow
+└── README.md
 ```
-
-## Continuous Integration (CI)
-
-The GitHub Actions workflow located at `.github/workflows/ci.yml` ensures the environment is correctly set up and runs automated tests on the codebase.
-
-## Contribution & Branching
-
-* Develop new features on separate feature branches.
-* Merge changes to `main` branch only through Pull Requests with clear, descriptive commit messages.
-
-## Contact
-
-For questions or support, please open an issue on GitHub or reach out to the repository maintainer.
 
 ---
 
-If you want, I can help you format this as Markdown or tailor it further!
+## GitHub Actions CI
+
+The workflow in `.github/workflows/ci.yml` automatically:
+
+* Sets up the Python environment
+* Installs dependencies
+* Validates code structure
+* Runs checks to ensure reliability and reproducibility
+
+---
+
+## Code Quality & Best Practices
+
+✅ Modular Code:
+
+* Core logic for cleaning, profiling, and analysis is organized into `src/` as importable modules
+
+✅ Documentation:
+
+* Functions and scripts include **docstrings** and **inline comments** explaining logic
+
+✅ Version Control:
+
+* Active use of **Git**, with visible commit history and descriptive messages
+* Development occurs via **feature branches** merged through pull requests
+
+---
+
+
+## Commit & Branching Policy
+
+* Major features are developed in **feature branches**
+* Merges into `main` occur via **Pull Requests**
+* Each commit is descriptive and aligned with the project's goals
+
+---
+
+## Contact
+
+For questions, issues, or suggestions:
+📨 [Open an issue](https://github.com/abeelgetahun/solar-challenge-week1/issues)
+🔗 Contact the repository maintainer via GitHub
+
+---
+
+Let me know if you want a badge section, usage example, or deployment instructions added next.
