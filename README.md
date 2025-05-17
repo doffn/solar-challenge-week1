@@ -119,4 +119,3 @@ For questions, issues, or suggestions:
 
 ---
 
-Let me know if you want a badge section, usage example, or deployment instructions added next.
